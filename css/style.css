@@ -235,6 +235,11 @@ body {
 
 	list-style-type: none;
 }
+
+.work-team-item {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .work-team-item:not(:last-child) {
 	margin-right: 24px;
 }
@@ -273,7 +278,11 @@ body {
 	height: 40px;
 	border: none;
 	border-radius: 50%;
-	background-color: #1d1dc0;
+	background-color: var(--color-button);
+}
+.icons:hover,
+.icons:focus {
+	background-color: var(--color-blue);
 }
 .icons:first-child {
 	margin-left: 16px;
@@ -295,17 +304,27 @@ body {
 	gap: 24px;
 }
 .customers-items {
+	display: block;
 	width: 168px;
 	height: 88px;
 	border: 1px solid #8e8f99;
 	border-radius: 4px;
+}
+.customers-items:hover,
+.customers-items:focus {
+	border: 1px solid var(--color-blue);
 }
 
 .custom-item {
 	margin: 16px 32px;
 	width: 104px;
 	height: 56px;
+	fill: #8e8f99;
 }
+.custom-item:hover {
+	fill: var(--color-blue);
+}
+
 /*footer*/
 .footer-section {
 	background: var(--color-background-grey);
@@ -322,7 +341,10 @@ body {
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 }
-
+.icons-footer:hover,
+.icons-footer:focus {
+	background-color: #31d0aa;
+}
 .icon-first {
 	margin-left: 0px;
 }
@@ -336,7 +358,7 @@ body {
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.02em;
-	color: #ffffff;
+	color: var(--color-white);
 }
 .footer-items {
 	width: 24px;
@@ -353,6 +375,8 @@ body {
 	line-height: 1.5;
 	color: var(--color-border);
 }
+/*Portfolio*/
+
 .buttons-section {
 	padding-top: 96px;
 	background-color: var(--color-white);
@@ -368,6 +392,8 @@ body {
 .buttons-items:not(:last-child) {
 	margin-right: 24px;
 }
+/*Gallery*/
+
 .gallery-block {
 	display: flex;
 	column-gap: 24px;
@@ -375,13 +401,16 @@ body {
 	flex-wrap: wrap;
 	list-style-type: none;
 }
+.gallery-items:hover {
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .gallery-items-block {
 	padding-left: 16px;
 	padding-top: 32px;
 	padding-bottom: 32px;
-	border-left: 1px solid #e7e9fc;
-	border-bottom: 1px solid #e7e9fc;
-	border-right: 1px solid #e7e9fc;
+	border-left: 1px solid var(--color-border);
+	border-bottom: 1px solid var(--color-border);
+	border-right: 1px solid var(--color-border);
 }
 .button-item {
 	padding: 12px 24px;
@@ -401,6 +430,7 @@ body {
 .button-item:focus {
 	background-color: var(--color-blue);
 	color: var(--color-white);
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .list-item {
 	text-decoration: none;
