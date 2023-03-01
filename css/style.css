@@ -18,6 +18,7 @@ ul,
 li {
 	margin: 0;
 	padding: 0;
+	list-style-type: none;
 }
 
 body {
@@ -51,8 +52,6 @@ body {
 }
 .header-list {
 	display: flex;
-
-	list-style-type: none;
 }
 .header-item:first-child {
 	margin-left: 76px;
@@ -63,8 +62,6 @@ body {
 }
 .address-list {
 	display: flex;
-
-	list-style-type: none;
 }
 
 .address-items:not(:last-child) {
@@ -158,8 +155,6 @@ body {
 }
 .advantages-list {
 	display: flex;
-
-	list-style-type: none;
 }
 .advantages-items::before {
 	content: "";
@@ -209,8 +204,6 @@ body {
 }
 .work-list {
 	display: flex;
-
-	list-style-type: none;
 }
 .work-item:not(:last-child) {
 	margin-right: 24px;
@@ -232,8 +225,6 @@ body {
 .work-block {
 	display: flex;
 	margin: 0 auto;
-
-	list-style-type: none;
 }
 
 .work-team-item {
@@ -284,10 +275,10 @@ body {
 .icons:focus {
 	background-color: var(--color-blue);
 }
-.icons:first-child {
+.icon-list:first-child {
 	margin-left: 16px;
 }
-.icons:not(:first-child) {
+.icon-list:not(:first-child) {
 	margin-left: 24px;
 }
 .icon-items {
@@ -314,15 +305,16 @@ body {
 .customers-items:focus {
 	border: 1px solid var(--color-blue);
 }
+.customers-items:hover .custom-item,
+.customers-items:focus .custom-item {
+	fill: var(--color-blue);
+}
 
 .custom-item {
 	margin: 16px 32px;
 	width: 104px;
 	height: 56px;
 	fill: #8e8f99;
-}
-.custom-item:hover {
-	fill: var(--color-blue);
 }
 
 /*footer*/
@@ -332,7 +324,6 @@ body {
 	padding-bottom: 100px;
 }
 .icons-footer {
-	margin-top: 16px;
 	margin-left: 16px;
 	display: block;
 	width: 40px;
@@ -354,6 +345,8 @@ body {
 	gap: 120px;
 }
 .social-title {
+	margin-bottom: 16px;
+
 	font-style: normal;
 	font-size: 16px;
 	line-height: 24px;
@@ -402,7 +395,7 @@ body {
 	list-style-type: none;
 }
 .gallery-items:hover {
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .gallery-items-block {
 	padding-left: 16px;
@@ -431,6 +424,7 @@ body {
 	background-color: var(--color-blue);
 	color: var(--color-white);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+	border-color: var(--color-blue);
 }
 .list-item {
 	text-decoration: none;
